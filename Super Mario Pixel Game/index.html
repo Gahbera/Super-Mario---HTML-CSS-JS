@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Bros</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+        <audio id="musica-tema" src="Audios/supermario-musica-tema.mp3" loop></audio>
+
+        <audio id="som-death" src="Audios/supermario-death.mp3"></audio>
+        <audio id="som-gameover" src="Audios/supermario-gameover.mp3"></audio>
+        <audio id="som-pular" src="Audios/supermario-jump.mp3"></audio>
+        <audio id="som-moeda" src="Audios/supermario-moeda.mp3"></audio>
+
+        <div class="area-jogo">
+
+            <div class="area-pontuacaoVida">
+
+                <div style="display: flex;">
+                    <p class="pontuacao">SCORE:<span id="valor-score">0</span></p>
+                    <p class="pontuacao"><span id="valor-score10">+10</span></p>
+                </div>
+
+                <div class="vida">
+                    <img class="vida1" src="Imagens/vida.png" alt="vida">
+                    <img class="vida2" src="Imagens/vida.png" alt="vida">
+                    <img class="vida3" src="Imagens/vida.png" alt="vida">
+                </div>
+            </div>
+
+            <img class="nuvem" src="Imagens/nuvem.png" alt="nuvens">
+            <img class="bomba" src="Imagens/bomb.png" alt="bomba">
+            <img class="moeda" src="Imagens/moeda.gif" alt="moeda">
+            <img class="cano" src="Imagens/cano.png" alt="cano">
+
+            <img class="personagem-esquerdo" src="">
+
+            <h1 class="botao start">TAP TO START GAME</h1>
+            <h1 class="botao restart2">TAP TO RETURN</h1>
+            <h1 class="gameOver">GAME OVER</h1>
+            <h1 class="botao restart">TAP TO RESTART GAME</h1>
+
+            <button id="botaoMusica">
+                <i class="fas fa-volume-mute"></i>
+            </button>
+        
+            <div class="area-trocaPersonagem">
+                <h1 id="titulo-jogo">MARIO GAME</h1>
+                <div class="personagens">
+                    <h3>Selecione um personagem:</h3>
+                    <div class="espacoPersonagens" style="display: flex; gap: 5px; justify-content: center;">
+                        <img id="mario" src="Imagens/supermario.gif" alt="">
+                        <img id="yoshi" src="Imagens/yoshi.gif" alt="">
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+
+        <div class="area-mobile">
+            <img src="Imagens/supermario-logo.png" alt="">
+            <i class="fas fa-mobile-alt"></i>
+            <p>Vire a tela para jogar</p>
+        </div>
+
+    <footer>@gahbera</footer>
+
+    <script src="script.js" defer></script>
+
+</body>
+</html>
